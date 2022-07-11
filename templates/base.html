@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="{static 'css/main.css'}">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+
+    nav{
+    background:#CCCCFF;
+    height:100px;
+
+  }
+
+     body{
+    background:#f7f6f4;
+    }
+    .Container{
+    background: blue
+    gap:20px;
+       }
+  footer{
+  background:#CCCCFF;
+  margin-top:7px;
+  }
+  li{
+  margin:2px;
+  }
+  hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+    </style>
+
+    <title>@Ndwiga art Media</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+    <a class="navbar-brand" href="#">@Ndwiga  art media
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="work">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+
+    <div class="Container">
+        {% block content %}
+
+         {% endblock %}
+    </div>
+
+</div>
+
+
+
+
+</body>
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Ndwiga art</h5>
+       <img src="https://i.imgur.com/UpjWvHz.png" alt="Logo" />
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">More</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="about">About</a>
+          </li>
+          <li>
+            <a href="work">Works</a>
+          </li>
+          <li>
+            <a href="contact">contact</a>
+          </li>
+          <li>
+            <a href="#!">Blog</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Social Media</h5>
+
+        <ul class="list-unstyled" style="padding:2px">
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=+254795188795">
+                <img src="https://cdn-icons-png.flaticon.com/128/733/733585.png"
+                style="height:30px; width:30px"
+                />
+            </a>
+          <li>
+           <a href="mailto:steve.ndwiga.5@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png"
+                style="height:25px; width:40px"
+                />
+            </a>
+          </li>
+          <li>
+           <a href="tel:+254795188795">
+                <img src="https://img.icons8.com/color/2x/apple-phone.png"
+                style="height:30px; width:30px"
+                />
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+                <img src="https://cdn-icons.flaticon.com/png/128/4494/premium/4494475.png?token=exp=1652182894~hmac=052913fc1b2147ca5ff28f3016f797dd"
+                style="height:30px; width:30px"
+                />
+            </a>
+          </li>
+             <li>
+           <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
+                style="height:30px; width:30px"
+                />
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+    <p>
+
+   <hr/>
+
+</p>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="#"> @Ndwiga</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</html>

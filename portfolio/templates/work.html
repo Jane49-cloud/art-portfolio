@@ -1,0 +1,59 @@
+{%  extends 'base.html'%}
+
+
+{% block content %}
+<style>
+ .container{
+ background:white;
+ display:flex;
+ flex-wrap: wrap;
+  align-content: space-between;
+  justify-content:center;
+  margin-top:20px;
+  }
+  .card:hover {
+  background-color:#ACE5EE;
+    transition: transform 125ms;
+    transform: translateY(-10px)
+}
+
+</style>
+
+
+   <style>
+        .card{
+<!--       margin:auto;-->
+       border-radius:10px;
+       margin-top:20px;
+        }
+        .line{
+
+        }
+
+    </style>
+
+
+       <div class="container">
+           {% for pictures in pictures %}
+           <div class="col">
+
+        <div class="card" style="width: 18rem;">
+
+            <div>
+                 <img class="card-img-top" src="{{pictures.image_url}}" width="100%"height="300" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{pictures.name}}</h5>
+                <p class="card-text">{{pictures.Description}}</p>
+                <a href="#" class="btn btn-primary">Book session</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+           <div class="line">
+               <hr>
+           </div>
+
+{% endfor %}
+             </div>
+{% endblock %}
